@@ -1,5 +1,5 @@
 document.getElementById("button").onclick = function () {
-    window.location.href = "../../Capstone/signOrLog";
+    window.location.href = "../signOrLog";
 };
 
 document.addEventListener('DOMContentLoaded', () => {
