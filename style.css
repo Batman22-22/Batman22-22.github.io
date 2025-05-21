@@ -1,31 +1,19 @@
-body {
+html, body {
   background-image: url(200.gif);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 2rem;
+  /* padding: 2rem; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: #f9f9f9;
   color: #333;
 }
 
-  .custom-dropdown .dropdown-menu {
-    background-color: #343a40;
-  }
-
-  .custom-dropdown .dropdown-item {
-    color: white;
-  }
-
-  .custom-dropdown .dropdown-item:hover {
-    background-color: #495057;
-  }
-
-/* div {
-  border: 5px solid #000;
-  border-radius: 10px;
-  margin: 1cm;
-  padding: 1cm;
-} */
+main {
+  flex: 1;
+}
 
 #background-pic {
   height: 100vh;
@@ -62,14 +50,26 @@ body {
   padding: 1cm;
 }
 
+footer {
+  opacity: 99%;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #292828;
+  padding: 1rem 0;
+}
+
+
+
 #calenderb {
   background-image: url(images.jpg);
    background-size:cover;
   background-repeat: no-repeat;
 }
+
 #candleb {
   background-image: url(Screenshot\ 2025-05-19\ 183204.png);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
