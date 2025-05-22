@@ -18,6 +18,11 @@ document.addEventListener('DOMContentLoaded', function (event) {
   writetext();
 });
 
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
+
 
 // buttons  for Calender Quest
 document.getElementById("calenderbutton1").onclick = function () {
@@ -42,11 +47,11 @@ $("#showCalender").click(function () {
 
 // buttons for Candle Climber
 document.getElementById("candlebutton1").onclick = function () {
-  window.open("https://blank.page/");
+  window.open("https://github.com/Batman22-22/Candle-Climber/releases/tag/game");
 };
 
 document.getElementById("candlebutton2").onclick = function () {
-  window.open("https://blank.page/");
+  window.open("https://github.com/Batman22-22/Candle-Climber");
 };
 
 $("#hideCandle").click(function () {

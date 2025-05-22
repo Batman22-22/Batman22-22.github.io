@@ -1,9 +1,7 @@
 html, body {
-  background-image: url(200.gif);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   margin: 0;
-  /* padding: 2rem; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -11,9 +9,15 @@ html, body {
   color: #333;
 }
 
-main {
-  flex: 1;
+
+.navbar-nav .dropdown-menu {
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
 }
+
+/* .navbar-nav .dropdown-item:hover {
+  background-color: #e9ecef;
+} */
 
 #background-pic {
   height: 100vh;
@@ -29,13 +33,13 @@ main {
 
 .headerdiv {
   opacity: 90%;
-  background-color: aqua;
+  background-color: rgb(162, 0, 255);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 5px solid #000;
-  border-radius: 10px;
+  border: 1cqi solid #000000;
+  border-radius: 2vw;
   margin: 1cm;
   padding: 1cm;
 }
@@ -44,7 +48,7 @@ main {
 .bodydiv {
   background-color: antiquewhite;
   text-align: left;
-  border: 5px solid #000;
+  border: 1px solid #000000;
   border-radius: 10px;
   margin: 1cm;
   padding: 1cm;
@@ -59,16 +63,40 @@ footer {
   padding: 1rem 0;
 }
 
+button {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background: linear-gradient(35deg,#928686, #f2f2f5);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 1vw;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.25s ease;
+}
 
+button:hover {
+  background: linear-gradient(135deg, #f2f2f5, #928686);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
 
 #calenderb {
-  background-image: url(images.jpg);
+  background-image: url(../pictures/images.jpg);
    background-size:cover;
   background-repeat: no-repeat;
 }
 
 #candleb {
-  background-image: url(Screenshot\ 2025-05-19\ 183204.png);
+  background-image: url(../pictures/Screenshot\ 2025-05-19\ 183204.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -78,7 +106,7 @@ footer {
   display: none;
 }
 
-h1,
+/* h1,
 h2 {
   color: #2c3e50;
 }
@@ -104,20 +132,18 @@ ul ul {
 
 li {
   margin-bottom: 0.5rem;
-}
+} */
 
 a {
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #9e9eac;
+  text-decoration: none;
 }
 
-strong {
-  color: #000;
-}
 
 @media only screen and (max-width:700px) {}
 
