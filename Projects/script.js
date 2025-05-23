@@ -1,29 +1,3 @@
-//header for page
-document.addEventListener('DOMContentLoaded', function (event) {
-
-  function writetext(text = '      All My Projects') {
-    var charIndex = 0;
-    document.getElementById('writetext').innerHTML = '';
-    function displayNextChar() {
-      if (charIndex < text.length) {
-        var writetext = document.getElementById('writetext');
-        writetext.appendChild(document.createTextNode(text[charIndex]));
-        charIndex += 1;
-        var randomInterval = Math.floor(Math.random() * (20 - 5 + 9)) + 90; // Random interval between 50ms and 200ms
-        setTimeout(displayNextChar, randomInterval);
-      }
-    }
-    displayNextChar();
-  };
-  writetext();
-});
-
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-});
-
-
-
 // buttons  for Calender Quest
 document.getElementById("calenderbutton1").onclick = function () {
   window.open("https://batman22-22.github.io/Calender-Quest/Capstone/welcome/");
