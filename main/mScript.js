@@ -24,7 +24,7 @@ function writetext(text = "") {
 // navbar for page
 document.addEventListener("DOMContentLoaded", function () {
   const navbarHTML = `
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark style="background-color: #4B0082;">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky">
   <a class="navbar-brand" href="../">
     <img src="../pictures/panlogo.jpg" id="logo" alt="">
   </a>
@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-center w-100" href="#" id="navbardrop2" data-toggle="dropdown">Work</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="../Work/#walmart">Walmart</a>
-          <a class="dropdown-item" href="../Work/#kelly">Kelly Education</a>
+      <a class="nav-link dropdown-toggle text-center w-100" href="#" id="navbardrop2" data-toggle="dropdown">Work</a>
+      <div class="dropdown-menu">
+      <a class="dropdown-item" href="../Work/#walmart">Walmart</a>
+      <a class="dropdown-item" href="../Work/#kelly">Kelly Education</a>
           <h5 class="dropdown-header">--Volunteer work--</h5>
           <a class="dropdown-item" href="../Work/#visions">Visions of Hope</a>
         </div>
