@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   margin: 0;
@@ -8,26 +9,34 @@ html, body {
   background-color: #f9f9f9;
   color: #333;
 }
- #logo{
-  height: 5vw; 
-  border-radius: 10%; 
-  /* padding-right: 13vw; */
- }
+
+#logo {
+  height: 5vw;
+  border-radius: 10%;
+}
+
 .navbar-nav .dropdown-menu {
   left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+  transform: translateX(-50%);
+  text-align: center;
   background-color: #f8f9fa;
   border-radius: 0.5rem;
 }
 
-/* .sticky{
-  position: sticky;
-  top: 0;
-  z-index: 100000000000;
-} */
+.navbar {
+  background-color: rgb(0, 252, 63);
+}
 
-  #background-pic {
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #000000 !important;
+}
+
+.navbar .nav-link:hover {
+  color: #685959 !important;
+}
+
+/* #background-pic {
   height: 100vh;
   width: 100vw;
   object-fit: cover;
@@ -37,7 +46,7 @@ html, body {
   top: 0;
   bottom: 0;
   z-index: -1;
-}
+} */
 
 .headerdiv {
   opacity: 90%;
@@ -74,7 +83,7 @@ footer {
 button {
   display: inline-block;
   padding: 0.75em 1.5em;
-  background: linear-gradient(35deg,#928686, #f2f2f5);
+  background: linear-gradient(35deg, #928686, #f2f2f5);
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
@@ -106,36 +115,9 @@ a:hover {
   color: #9e9eac;
   text-decoration: none;
 }
+/* old700px */
+@media only screen and (max-width: 570px) {
 
-/* Tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
- 
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-
-@media only screen and (max-width: 700px) {
   .headerdiv,
   .bodydiv {
     margin: 0.5cm;
@@ -143,12 +125,12 @@ a:hover {
     border-radius: 4vw;
   }
 
- #logo{
-  height: 10vw; 
-  border-radius: 10%; 
-  /* padding-right: 29vw; */
- }
- 
+  #logo {
+    height: 10vw;
+    border-radius: 10%;
+    /* padding-right: 29vw; */
+  }
+
   button {
     font-size: 0.9rem;
     padding: 0.5em 1em;
@@ -166,6 +148,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 1366.1px) {
+
   .headerdiv,
   .bodydiv {
     max-width: 1200px;
@@ -186,13 +169,3 @@ a:hover {
     font-size: 1rem;
   }
 }
-
-
-
-
-
-
-
-
-
-

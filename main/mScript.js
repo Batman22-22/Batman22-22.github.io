@@ -24,7 +24,7 @@ function writetext(text = "") {
 // navbar for page
 document.addEventListener("DOMContentLoaded", function () {
   const navbarHTML = `
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky">
+<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
   <a class="navbar-brand" href="../">
     <img src="../pictures/panlogo.jpg" id="logo" alt="">
   </a>
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav mx-auto">
+    <ul class="navbar-nav">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-center w-100" href="#" id="navbardrop1" data-toggle="dropdown">Home</a>
         <div class="dropdown-menu">
